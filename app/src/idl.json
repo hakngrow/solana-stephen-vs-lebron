@@ -1,0 +1,70 @@
+{
+  "version": "0.1.0",
+  "name": "crunchy_vs_smooth",
+  "instructions": [
+    {
+      "name": "initialize",
+      "accounts": [
+        {
+          "name": "voteAccount",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "voteStephen",
+      "accounts": [
+        {
+          "name": "voteAccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "voteLebron",
+      "accounts": [
+        {
+          "name": "voteAccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    }
+  ],
+  "accounts": [
+    {
+      "name": "VoteAccount",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "stephen",
+            "type": "u64"
+          },
+          {
+            "name": "lebron",
+            "type": "u64"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "address": "7mZXERgrrJj6oWSbeMi1jdFJCqCSa4MMWpJ9VpnvftRx"
+  }
+}

@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.localnet]
+stephen_vs_lebron = "GrUhBnyVvJzUUYRMz83pEcewmPdf8BFKdFuXie8mRkkn"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/hakngrow/.config/solana/id.json"
+
+[scripts]
+test = "mocha -t 1000000 tests/"
